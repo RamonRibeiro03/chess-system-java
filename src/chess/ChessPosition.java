@@ -2,6 +2,7 @@ package chess;
 
 import boardgame.Position;
 
+
 public class ChessPosition {
     private char column;
     private int row;
@@ -24,6 +25,7 @@ public class ChessPosition {
     }
 
     protected Position toPosition(){
+
         return new Position(8 - row, column - 'a');
     }
 
@@ -33,6 +35,7 @@ public class ChessPosition {
 
     @Override
     public String toString(){
+
         return "" + column + row;
     }
 
